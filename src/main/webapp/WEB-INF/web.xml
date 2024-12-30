@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <display-name>Banking System</display-name>
+
+  <!-- Signup Servlet -->
+  <servlet>
+    <servlet-name>signupServlet</servlet-name>
+    <display-name>signupServlet</display-name>
+   
+    <servlet-class>Controller.signupServlet</servlet-class> <!-- Ensure this matches the package and class name -->
+  </servlet>
+
+  <!-- Login Servlet -->
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <display-name>loginServlet</display-name>
+    <description>Handles the login logic</description>
+    <servlet-class>Controller.loginServlet</servlet-class> <!-- Ensure this matches the actual class location -->
+  </servlet>
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<display-name>loginServlet</display-name>
+  	<description></description>
+  	<servlet-class>Controller.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>signupServlet</servlet-name>
+  	<display-name>signupServlet</display-name>
+  	<description></description>
+  	<servlet-class>Controller.signupServlet</servlet-class>
+ </servlet>
+ 
+  <!-- Welcome File Configuration -->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file> <!-- This will be the first page loaded -->
+    <welcome-file>Signup.jsp</welcome-file> <!-- Fallback to login.jsp -->
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
